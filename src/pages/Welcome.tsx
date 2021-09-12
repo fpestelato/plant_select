@@ -14,10 +14,10 @@ import wateringImg from '../assets/watering.png';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 import { useNavigation } from '@react-navigation/native';
-import { WelcomeScreenNativeProp } from '../../types';
+import { ScreenParamListProps } from '../../types';
 
 export function Welcome() {
-    const navigation = useNavigation<WelcomeScreenNativeProp>();
+    const navigation = useNavigation<ScreenParamListProps>();
 
     function handleSubmit() {
         navigation.navigate('UserIdentification');
